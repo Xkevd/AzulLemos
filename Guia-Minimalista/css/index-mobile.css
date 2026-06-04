@@ -1,0 +1,203 @@
+/* Global Mobile Adjustments */
+#container-1,
+#container-2,
+#container-3,
+#container-4,
+#container-5,
+#container-6,
+#container-7,
+#container-8 {
+    padding: 4rem 3rem;
+    /* Reduced padding for mobile */
+}
+
+/* Typography Adjustments */
+.title {
+    font-size: 2rem;
+    /* Smaller title */
+}
+
+.subtitle {
+    font-size: 2rem !important;
+    /* Smaller subtitle */
+}
+
+p,
+.description {
+    font-size: 1rem !important;
+    /* Readable paragraph size */
+}
+
+/* Container 1 */
+#container-1 {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background-position: center;
+}
+
+#container-1 h1 {
+    font-size: 2rem;
+}
+
+#container-1 p {
+    font-size: 1.1rem !important;
+}
+
+#container-1 p br {
+    display: none;
+}
+
+#container-1 .btn-1 {
+    font-size: 1rem;
+    padding: 1rem;
+    text-wrap: nowrap;
+}
+
+/*Container 2*/
+#container-2 br {
+    display: none;
+}
+
+#container-2 p {
+    margin-top: 0;
+}
+
+.btn-2 {
+    font-size: 1rem;
+    padding: 1rem;
+    text-wrap: nowrap;
+}
+
+/* Container 3*/
+.paragraph-3 {
+    margin: 0.5rem auto;
+}
+
+/* Container 4 - Flex Column as requested */
+#container-4 .features-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    max-width: 80%;
+}
+
+#container-4 .feature-card {
+    aspect-ratio: auto;
+    /* Remove 1/1 aspect ratio if needed, or keep it */
+    min-height: 200px;
+    width: 100%;
+}
+
+/* Container 5 - Stack Layout */
+#container-5 {
+    display: flex;
+    /* Override grid */
+    flex-direction: column;
+    padding: 0 !important;
+    position: relative;
+    overflow: hidden;
+    /* Ensure fixed height image doesn't overflow if we set it crazy high, or just for cleanliness */
+}
+
+#container-5 aside:first-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Fix height to avoid resizing/zooming during accordion animation */
+    height: 100vh;
+    opacity: 0.1;
+    z-index: 0;
+    /* Ensure it stays behind */
+    pointer-events: none;
+}
+
+#container-5 aside:first-of-type img {
+    height: 100%;
+    object-fit: cover;
+}
+
+#container-5 .subtitle {
+    margin: 3rem 1.5rem 2rem 2rem;
+    z-index: 1;
+}
+
+#container-5 aside:last-of-type {
+    padding: 0 2rem 4rem 2rem;
+}
+
+/* Container 6 - Feedback */
+#feedback-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+#feedback-grid h2,
+#feedback-grid p {
+    text-align: center;
+    align-self: center;
+    margin-bottom: 2rem;
+}
+
+#feedback-grid h2 br,
+#feedback-grid p br,
+#container-7 div h2 br,
+#container-7 div p br {
+    display: none;
+}
+
+#fdb1,
+#fdb2,
+#fdb3 {
+    grid-column: auto;
+    grid-row: auto;
+    align-self: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Container 7 - Pricing */
+#container-7 .price-info {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 2.5rem 1rem;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+#container-7 .price-amount {
+    font-size: 4rem !important;
+    line-height: 1;
+}
+
+#container-7 .price-label {
+    font-size: 0.9rem !important;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+}
+
+#container-7 .subtitle {
+    font-size: 2.2rem !important;
+}
+
+#container-7 .btn-1 {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Container 8 - FAQ */
+#container-8 .subtitle {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#container-8 .faq-container {
+    width: 70%;
+    min-width: 300px;
+}
+
+.faq-quest>p {
+    font-size: 1.2rem;
+}

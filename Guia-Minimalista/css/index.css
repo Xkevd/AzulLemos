@@ -1,0 +1,556 @@
+:root {
+    --bg-color: #7e7b7b;
+    /* Gris claro de fondo */
+    --text-color: #ffffff;
+    --accent-color: #ffffff;
+    --gris-claro: #e9e9e9;
+    --gris-oscuro: #1f1f1f;
+}
+
+/*Fuentes*/
+@font-face {
+    font-family: 'IvyOra';
+    src: url('../fonts/IvyOra/IvyOraDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IvyOra';
+    src: url('../fonts/IvyOra/IvyOraDisplay-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    color: var(--text-color);
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/*Text Styles*/
+.title {
+    font-family: 'IvyOra', serif;
+    font-size: 5.5rem;
+    line-height: 1;
+    font-weight: 200;
+    letter-spacing: -5px;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-family: 'IvyOra';
+    font-size: 3.5rem;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: -2px;
+    margin-bottom: 2rem;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+    font-family: 'Montserrat';
+}
+
+p {
+    font-family: 'Montserrat';
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.italic-serif {
+    font-family: 'IvyOra';
+    font-style: italic;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid var(--text-color);
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-1:hover {
+    background-color: var(--text-color);
+    color: var(--gris-oscuro);
+    border-color: var(--text-color);
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-2:hover {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+#container-1,
+#container-2,
+#container-3,
+#container-4,
+#container-5,
+#container-6,
+#container-7,
+#container-8 {
+    padding: 9rem 8rem;
+}
+
+/* Container 4 */
+#container-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url(../images/fondoContainer4.png);
+    background-size: cover;
+}
+
+#container-4 .subtitle {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    /* Ensure responsiveness */
+}
+
+.feature-card {
+    border: 2px solid white;
+    padding: 2rem 1.5rem;
+    flex: 1;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.feature-card p {
+    font-size: 1.25rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 200;
+    line-height: 1.4;
+    color: white;
+}
+
+/* Container 5 */
+#container-5 {
+    display: grid;
+    grid-template-columns: 40vw 1fr;
+    /* User requested 40vw auto, 1fr ensures it fills space */
+    grid-template-rows: auto 1fr;
+    padding: 0 !important;
+    /* Override standard padding */
+    background-color: #1a1a1a;
+    color: white;
+    align-items: start;
+}
+
+#container-5 aside:first-of-type {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+#container-5 aside:first-of-type img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#container-5 .subtitle {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin: 4rem 4rem 2rem 4rem;
+    text-align: left;
+    color: white;
+}
+
+#container-5 aside:last-of-type {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 0 4rem 4rem 4rem;
+}
+
+#container-5 aside:last-of-type p:first-of-type {
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    opacity: 0.8;
+}
+
+.module-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 0;
+    /* Updated padding */
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow content to wrap */
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    /* Make it look clickable */
+}
+
+.module-item:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.module-item>p {
+    margin: 0 !important;
+    font-weight: 200;
+    font-family: 'Cormorant Garamond', serif;
+
+}
+
+.module-item button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+/* Ensure detail content is white */
+.module-detail {
+    width: 100%;
+    /* force break to new line */
+    color: #cccccc;
+}
+
+.module-detail ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 1.5rem 0;
+    /* Add bottom margin */
+}
+
+.module-detail li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+    color: #e0e0e0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.module-detail li::before {
+    content: "•";
+    color: white;
+    position: absolute;
+    left: 0;
+    transform: scale(1.2);
+    /* Slightly larger */
+    display: inline-block;
+}
+
+/* Container 1 */
+#container-1 {
+    background-color: var(--bg-color);
+    height: fit-content;
+    background-image: url(../images/fondoContainer1r.png);
+    background-size: cover;
+}
+
+/* Container 2 */
+#container-2 {
+    background-color: var(--gris-claro);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container 3 */
+#container-3 {
+    background-color: var(--gris-oscuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.paragraph-3 {
+    margin: 1rem auto;
+}
+
+.paragraph-3 p {
+    margin: 0;
+    text-align: center;
+}
+
+
+
+/*Container 6 - Feedback*/
+#container-6 {
+    background-color: var(--gris-claro);
+}
+
+#feedback-grid {
+    max-width: 100vw;
+    max-height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    column-gap: 1rem;
+}
+
+#fdb1,
+#fdb2,
+#fdb3 {
+    max-width: 100%;
+    align-self: flex-end;
+}
+
+#fdb1 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#fdb2 {
+    grid-column: 2/3;
+    grid-row: 4/2;
+}
+
+#fdb3 {
+    grid-column: 3/4;
+    grid-row: 1/4;
+    left: 0;
+}
+
+#feedback-grid h2 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    color: black;
+    align-self: flex-start;
+    margin: 0;
+}
+
+#feedback-grid p {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    color: black;
+    margin: 0;
+    align-self: flex-start;
+}
+
+
+
+
+/*Animacion FAQ*/
+.faq-quest {
+    transition: margin-bottom 0.5s ease;
+}
+
+.faq-ans {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.faq-ans.activo {
+    max-height: 500px;
+}
+
+/*Animacion Etapas*/
+.module-list {
+    transition: margin-bottom 0.5s ease;
+}
+
+.module-detail {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.module-detail.activo {
+    max-height: 1000px;
+}
+
+/* Container 7 - Pricing */
+#container-7 {
+    background-color: #1f1f1f;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-7 .subtitle {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+#container-7 .description {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+.price-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.price-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.price-amount {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    margin: 0;
+    line-height: 1;
+    font-weight: 400;
+    text-align: center;
+    font-variant-numeric: lining-nums;
+}
+
+.price-installments {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    opacity: 0.8;
+    line-height: 1.4;
+}
+
+#container-7 .btn-1 {
+    border-color: white;
+    color: white;
+    padding: 1rem 3rem;
+}
+
+#container-7 .btn-1:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Container 8 - FAQ */
+#container-8 {
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-8 .subtitle {
+    font-size: 3rem;
+    /* Larger as per image */
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.faq-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-quest {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-quest:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.faq-quest>p {
+    margin: 0;
+    /* Remove default p margin in question */
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 200;
+    flex: 1;
+    /* Take available text space */
+    padding-right: 1rem;
+}
+
+.faq-quest button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 200;
+    cursor: pointer;
+    padding: 0 0.5rem;
+}
+
+.faq-ans {
+    width: 100%;
+    /* Keep animation styles from original css if applicable, overriding minimal things */
+    color: #cccccc;
+    /* Ensure max-height logic from previous CSS works, just adding typography */
+}
+
+.faq-ans p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@100;300;400;600;800&display=swap');
+
+@font-face{
+    font-family: "Roxborough";
+    src: url("../fonts/Roxborough/Webfont/RoxboroughCF-DemiBold.woff2") format("woff2");
+   
+}
+@font-face{
+    font-family: "RoxboroughLight";
+    src: url("../fonts/Roxborough/Webfont/RoxboroughCF-Light.woff2") format("woff2");
+   
+}
+@font-face{
+    font-family: "RoxboroughRegular";
+    src: url("../fonts/Roxborough/Webfont/RoxboroughCF-Regular.woff2") format("woff2");
+   
+}
+/* --- VARIABLES --- */
+/*-Colores */
+:root{
+--negro: #1D1D1D;
+--blanco:  #EAEAEA;
+--beige-claro: #C8AF7B;
+--beige-oscuro: #A08053;
+--boton-imagen-size: 65vw;
+--boton-img-size: 58vw;
+--espacio-entre-divs: 2rem;
+}
+/* --- ALINEACION DE TEXTO --- */
+.left{
+    text-align: left;
+}
+.center{
+    text-align: center;
+}
+/* --- COLORES/FONTS DE TEXTO --- */
+a{
+    text-decoration: none;
+}
+.parrafo-font{
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+}
+.titulo-font{
+    font-family: "Roxborough", sans-serif;
+    font-size: 1.5rem;
+}
+.gradiente{
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+	background-image: linear-gradient(-45deg, #b3915d, #edcc86, #b3915d);
+}
+.beige-claro{
+    color: var(--beige-claro);
+}
+.beige-oscuro{
+    color: var(--beige-oscuro);
+}
+.blanco{
+    color: var(--blanco);
+}
+.negro{
+    color: var(--negro);
+}
+
+/*FONTS*/
+.RoxFont{
+    font-family: "Roxborough";
+}
+.RoxLiFont{
+    font-family: "RoxboroughLight";
+    font-weight: 300;
+}
+
+.TimesFont{
+    font-family: "Cormorant";
+}
+.italic{
+    font-style: italic;
+}
+.mon-light{
+    font-family: "Montserrat";
+    font-weight: 300;
+}
+.mon-regular{
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+.mon-medium{
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+.mon-sb{
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+/* --- TAMAÑOS DE TEXTO --- */
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 1.3rem;
+}
+
+/* --- BOTONES, LISTAS y OTROS ELEMENTOS */
+.boton-principal{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    background-image: linear-gradient(-45deg, #74562b, #edcc86, #74562b);
+    display: block;
+    margin: auto;
+    /*width: var(--boton-imagen-size);*/
+    padding: 0.5rem 0.5rem;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    color: var(--negro);
+}
+hr{
+    width: 30vw;
+    size: 2rem;
+}
+/* --- CUERPO --- */
+body{
+    background-color: var(--negro);
+    /*margin-top: 4rem;*/
+    margin: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+header, main, footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+header, main div{
+    padding: 0 8vw;
+}
+header{
+    background-image: url(../images/Recurso-14e.jpg);
+    background-size: cover;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+header div{
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#subtitulo-header{
+    margin-top: 20rem;
+    font-size: 1.2rem;
+    color: white;
+    font-family: "RoxboroughRegular";
+    
+}
+header div a button{
+    width: 65vw;
+}
+#button-1{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    display: block;
+    padding: 1.3rem 1rem;
+    border: white 1px solid;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    color: white;
+    min-width: max-content;
+}
+#pagos-1 img{
+    position: relative;
+    width: 58vw;
+}
+
+/*introduccion*/
+#introduccion{
+    background-image: url(../images/bg-white.jpg);
+    background-size: cover;
+    padding: 0;
+    padding-top: 3rem;
+    width: 100%;
+}
+#introduccion p{
+    
+    text-align: center;
+    padding: 0 15vw;
+
+}
+#intro-p{
+    font-family: "Cormorant";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1;
+}
+#introduccion p:nth-of-type(2){
+    font-size: 1.2rem;
+    padding: 0;
+}
+#full-w-p{
+    margin: auto;
+    margin-bottom: 2rem;
+    width: max-content;
+    text-align: center;
+}
+
+/* --- Cuatro Puntos --- */
+#cuatro-puntos{
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cuatro-puntos h1{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+#cuatro-puntos section h1{
+    font-size: 2.5rem;
+    color: var(--negro);
+    margin: 2rem 0;
+    font-family: "RoxboroughLight";
+}
+@media (max-width:999px){
+#cuatro-puntos section{
+    border: #1D1D1D solid 1px;
+    width: 50vw;
+    min-width: 12rem;
+    height: fit-content;
+    
+}
+#pago-desk{
+    display: none;
+}
+#pago-mobile{
+    display: inline-block;
+}
+#cuatro-puntos section:nth-child(2), #cuatro-puntos section:nth-child(3), #cuatro-puntos section:nth-child(1){
+    border-bottom: none;
+}
+
+}
+
+
+
+
+#cuatro-puntos section p{
+    font-size: 1rem;
+    font-family: "Cormorant";
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: var(--negro);
+} 
+
+
+/* --- Bullet Points --- */
+#bullet-points-div{
+    padding-top: var(--espacio-entre-divs);
+    
+    padding-bottom: var(--espacio-entre-divs);
+}
+
+#bullet-points-div ul{
+    border: var(--blanco) solid 1px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+}
+#bullet-points-div ul li{
+    font-weight: 400;
+    padding: 0.3rem 0;
+}
+#primera-lista{
+    font-family: "Cormorant";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1rem;
+    
+}
+#segunda-lista{
+    margin-top: 2rem;
+    font-family: "Cormorant";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1rem;
+}
+#bullet-points-div a button{
+    width: 100%;
+    margin-top: 2rem;
+}
+#bullet-points-div picture{
+    width: var(--boton-img-size);
+}
+#bullet-points-div img{
+    width: var(--boton-img-size);
+}
+/* --- Cuarto Parrafo --- */
+#cuarto-parrafo{
+    padding-top: var(--espacio-entre-divs);
+    padding-bottom: var(--espacio-entre-divs);
+    background-image: url(../images/bg-white.jpg);
+}
+#cuarto-parrafo h2{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+#cuarto-parrafo div{
+    padding: 0;
+}
+/* --- Quinto Parrafo --- */
+#quinto-parrafo{
+    padding-top: var(--espacio-entre-divs);
+    padding-bottom: var(--espacio-entre-divs);
+}
+#quinto-parrafo hr:nth-of-type(1){
+    margin-bottom: 2rem;
+}
+#quinto-parrafo hr:nth-of-type(2){
+    margin-top: 2rem;
+}
+#quinto-parrafo h2{
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+#quinto-parrafo p{
+    border: var(--beige-claro) solid 1px;
+    padding: 1rem;
+    line-height: 0.9rem;
+}
+/* --- Libro --- */
+#libro-div{
+    padding-top: var(--espacio-entre-divs);
+    padding-bottom: var(--espacio-entre-divs);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#libro-div h2{
+    font-size: 1.4rem;
+}
+#libro-div p{
+    margin: 0.5rem;
+}
+#boton-libro{
+    margin: 0;
+    margin-top: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 0.8rem;
+    padding: 1rem 0.5rem;
+
+}
+#libro-antes{
+    padding: 0;
+}
+#pagos-3{
+    width: 35vw;
+    min-width: 20rem;
+}
+/* --- FAQ --- */
+#faq-div section{
+    display: grid;
+    grid-template-columns: auto 20px;
+    column-gap: 5px;
+    width: 100%
+}
+
+#faq-div{
+    width: 80vw;
+    padding: 0 8vw;
+}
+#faq-div section p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: var(--blanco);
+    align-self: flex-start;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+#faq-div section p:nth-child(1){
+    cursor: pointer;
+}
+#faq-div section p:nth-child(3).closed{
+    margin-top: 1rem;
+    display: none;
+}
+#faq-div section p:nth-child(3){
+    display: inline-block;
+    margin-left: 1rem;
+    
+}
+#faq-div section button{
+    border: none;
+    background-color: transparent;
+    color: var(--blanco);
+    align-self: flex-start;
+}
+#faq-div hr{
+    width: 100%;
+    margin: 0 0 1rem 0;
+}
+/*Logo*/
+header .logo{
+    width: 40vw;
+    margin: auto;
+}
+img{
+    width: 100%;
+}
+/* FOOTER */
+footer{
+    padding: var(--espacio-entre-divs) 2vw 0 2vw;
+    margin-bottom: 0;
+}
+footer hr{
+    width: 100%;
+}
+#copyright{
+    font-size: 0.65rem;
+    padding: 0;
+}
+footer p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.6rem;
+    padding: 0.3rem 1rem;
+    margin: 0;
+}
+footer picture{
+    padding-top: var(--espacio-entre-divs);
+    margin: 0;
+    padding-bottom: 0;
+    display: flex;
+}
+#logo-final{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-self: baseline;
+    justify-self: center;
+}
+
+/* TESTING */
+
