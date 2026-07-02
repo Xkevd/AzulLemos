@@ -10,7 +10,7 @@
 /*Fuentes*/
 @font-face {
     font-family: 'IvyOra';
-    src: url('../fonts/IvyOra/IvyOraDisplay-Regular.ttf') format('truetype');
+    src: url('../../resources/fonts/IvyOra/IvyOraDisplay-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -18,7 +18,7 @@
 
 @font-face {
     font-family: 'IvyOra';
-    src: url('../fonts/IvyOra/IvyOraDisplay-RegularItalic.ttf') format('truetype');
+    src: url('../../resources/fonts/IvyOra/IvyOraDisplay-RegularItalic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -45,7 +45,7 @@ body {
     font-family: 'IvyOra', serif;
     font-size: 5.5rem;
     line-height: 1;
-    font-weight: 200;
+    font-weight: normal;
     letter-spacing: -5px;
     margin-bottom: 2rem;
     text-transform: uppercase;
