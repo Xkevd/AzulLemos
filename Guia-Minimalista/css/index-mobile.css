@@ -121,7 +121,7 @@ p,
 }
 
 #container-5 .subtitle {
-    margin: 3rem 1.5rem 2rem 2rem;
+    margin: 3rem 0 0 0;
     z-index: 1;
 }
 
@@ -201,4 +201,12 @@ p,
 
 .faq-quest>p {
     font-size: 1.2rem;
+}
+
+#container-7 {
+    padding-bottom: 0;
+}
+
+#container-8 {
+    margin-top: 0;
 }

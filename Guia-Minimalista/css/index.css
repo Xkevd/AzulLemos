@@ -173,18 +173,15 @@ p {
 #container-5 {
     display: grid;
     grid-template-columns: 40vw 1fr;
-    /* User requested 40vw auto, 1fr ensures it fills space */
-    grid-template-rows: auto 1fr;
     padding: 0 !important;
     /* Override standard padding */
     background-color: #1a1a1a;
     color: white;
-    align-items: start;
 }
 
 #container-5 aside:first-of-type {
     grid-column: 1 / 2;
-    grid-row: 1 / -1;
+    align-self: start;
     height: 100vh;
     position: sticky;
     top: 0;
@@ -198,17 +195,15 @@ p {
 }
 
 #container-5 .subtitle {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    margin: 4rem 4rem 2rem 4rem;
+    margin: 0;
     text-align: left;
     color: white;
 }
 
 #container-5 aside:last-of-type {
     grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    padding: 0 4rem 4rem 4rem;
+    align-self: center;
+    padding: 4rem;
 }
 
 #container-5 aside:last-of-type p:first-of-type {
@@ -418,6 +413,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 0;
 }
 
 #container-7 .subtitle {
@@ -488,6 +484,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 3rem;
 }
 
 #container-8 .subtitle {
