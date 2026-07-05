@@ -6,7 +6,8 @@
 #container-5,
 #container-6,
 #container-7,
-#container-8 {
+#container-8,
+.no-mobile-br {
     padding: 4rem 3rem;
     /* Reduced padding for mobile */
 }
@@ -34,7 +35,7 @@ p,
     min-height: 80vh;
     display: flex;
     align-items: center;
-    background-position: center;
+    background-position: 70% center;
 }
 
 #container-1 h1 {
@@ -50,7 +51,7 @@ p,
 }
 
 #container-1 .btn-1 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: 1rem;
     text-wrap: nowrap;
 }
@@ -180,7 +181,7 @@ p,
 }
 
 #container-7 .subtitle {
-    font-size: 2.2rem !important;
+    font-size: 2rem !important;
 }
 
 #container-7 .btn-1 {

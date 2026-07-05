@@ -45,7 +45,7 @@ body {
     font-family: 'IvyOra', serif;
     font-size: 5.5rem;
     line-height: 1;
-    font-weight: normal;
+    font-weight: 200;
     letter-spacing: -5px;
     margin-bottom: 2rem;
     text-transform: uppercase;
@@ -550,4 +550,10 @@ p {
     line-height: 1.6;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+@media (max-width: 1250px) {
+    .no-mobile-br {
+        display: none !important;
+    }
 }
