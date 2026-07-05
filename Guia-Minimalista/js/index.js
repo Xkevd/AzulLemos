@@ -28,3 +28,15 @@ document.addEventListener('click', (e) => {
         }
     }
 });
+
+// Guardamos la orientación inicial para saber si realmente cambió
+let lastOrientation = window.orientation;
+
+window.addEventListener("resize", () => {
+    // Si la orientación actual es diferente a la guardada, el usuario giró la pantalla
+    if (window.orientation !== lastOrientation) {
+        lastOrientation = window.orientation; // Actualizamos el estado
+        // Forzamos la recarga de la página instantáneamente
+        window.location.reload();
+    }
+});
